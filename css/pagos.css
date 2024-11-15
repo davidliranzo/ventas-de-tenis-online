@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #0b0303;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table{
+    color: #000;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.submenu img {
+    width: 200px;
+    cursor: pointer;
+}
+
+#carrito {
+    display:block ; /* Hide by default */
+    position: relative;
+    top: 30px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    width: 900px;
+    z-index: 1000;
+}
+
+/* Form Styles */
+.datos-clientes {
+    margin-top: 40px;
+}
+
+.datos-clientes div {
+    margin-bottom: 20px;
+}
+
+.datos-clientes label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.datos-clientes input[type="text"],
+.datos-clientes input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button{
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #3fab6e;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Specific Element Styles */
+#img-carrito {
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 95%;
+    }
+    .datos-clientes input[type="text"],
+    .datos-clientes input[type="number"] {
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 80px;
+    }
+    .submenu img {
+        width: 25px;
+    }
+}

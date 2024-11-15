@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tenis</title>
+    <link rel="stylesheet" href="css/pagos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="row">
+            <div class="four columns logo">
+                <img src="img/logo.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form id="formulario-cliente">
+            <div class="datos-clientes">
+                <label for="foto">Elige una foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <div class="nombre">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="direccion">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" placeholder="Ingrese la dirección">
+                </div>
+                <div class="numeros">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" placeholder="Ingrese su Teléfono" maxlength="10">
+                </div>
+                <div class="tarjeta">
+                    <label for="tarjeta">Número de tarjeta:</label>
+                    <input type="text" id="tarjeta" placeholder="1234 5678 9012 3456" maxlength="16" pattern="^\d{16,16}$">
+                </div>
+                <div class="fecha-expiracion">
+                    <label for="fecha-mes">Fecha de Expiración:</label>
+                    <select id="fecha-mes" required>
+                        <option value="" selected disabled>Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <select id="fecha-anio" required>
+                        <option value="" selected disabled>Año</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                        <option value="26">2026</option>
+                        <option value="27">2027</option>
+                        <!-- Añadir más años según sea necesario -->
+                    </select>
+                </div>
+                <div class="cvc">
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" placeholder="CVC" maxlength="4" pattern="^\d{3,4}$">
+                </div>
+                <button type="submit">Confirmar Compra</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/pago.js"></script>
+</body>
+</html>

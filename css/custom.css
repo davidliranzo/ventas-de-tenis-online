@@ -1,0 +1,326 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #000
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#logo{
+    width: 100px;
+    
+}
+header {
+    padding: 20px 0 0 0;
+    background-color: #000;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+#hero {
+    background: #000;
+    height: 350px;
+    background-size: cover;
+    cursor: pointer;
+}
+.img-principal{
+    background:#fff;
+    background-size: cover;
+    width: 1100px;
+    height: 350px;
+    margin: 20px 0;
+    position: relative;
+    right: 70px;
+
+}
+.imagen-curso{
+    transition: all 2s;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.imagen-curso:hover{
+    width: 340px;
+}
+
+.principal{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    left: 400px;
+}
+.left{
+    color: #000;
+    position: relative;
+    bottom: 320px;
+    left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 58px;
+}
+.venta-prin{
+    color: #fff;
+    position: relative;
+    bottom: 320px;
+    left: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 18px;
+    border: #000 solid 1px;
+    border-radius: 20px;
+    background-color: #000;
+    width: 20%;
+    text-align: center;
+}
+
+#encabezado {
+    margin: 30px 0;
+}
+.submenu {
+    position:relative;
+    top: 40px;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.pago{
+    display: inline-block;
+  height: 38px;
+  padding: 0 55px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+.pago:hover{
+    border: 1px solid #000;
+    color: #ff0000;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
+.barra {
+    padding: 20px 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.9557072829131653) 19%, rgba(9,9,121,1) 61%, rgba(35,70,78,1) 87%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+    margin:0;
+    color: white;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #aaa;;
+    padding-top: 40px;   
+}
+.footer .menu a{
+display: block;
+margin-bottom: 10px;
+text-decoration: none;
+}
+@media (max-width: 750px) {
+    .img-principal {
+        width: 100%;
+        height: auto;
+        right: 0;
+    }
+    .principal {
+        width: 100%;
+        left: 0;
+    }
+    .left {
+        font-size: 24px;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+    .venta-prin {
+        width: 80%;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #header .container {
+        padding: 0 15px;
+    }
+    .contenido-hero {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    .contenido-hero form #buscador {
+        height: 40px;
+    }
+    .contenido-hero form .submit-buscador {
+        width: 40px;
+    }
+    .submenu #carrito {
+        min-height: auto;
+        min-width: auto;
+    }
+    .pago {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    .icono {
+        padding-left: 30px;
+        background-size: 20px;
+    }
+    .card {
+        padding: 10px;
+    }
+    .info-card {
+        padding: 10px;
+    }
+    .info-card .precio {
+        font-size: 16px;
+    }
+    .info-card .precio span {
+        font-size: 20px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+    .footer .menu a {
+        margin-bottom: 5px;
+    }
+}
