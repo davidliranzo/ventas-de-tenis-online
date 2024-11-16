@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #0a0a65ce;
     color: #333;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ table{
 }
 
 #carrito {
-    display:block ; /* Hide by default */
+    display:block ; 
     position: relative;
     top: 30px;
     background-color: white;
@@ -77,12 +77,12 @@ button{
     cursor: pointer;
 }
 
-/* Specific Element Styles */
+
 #img-carrito {
     cursor: pointer;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .contenedor {
         width: 95%;
